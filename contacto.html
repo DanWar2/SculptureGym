@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="proyecto.css">
+    <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
+    <title>Sculpture Gym: Home</title>
+</head>
+
+<body>
+    <div id="main">
+        <header>
+            <div class="logC">
+                <div class="videoC">
+                    <video autoplay muted loop src="video/SCULPTUREGYM.mp4" class="logo3"></video>
+                </div>
+            </div>
+            <div class="navbar">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Dietas</button>
+                    <div class="dropdown-content">
+                        <a href="dieta.html">Guia Alimenticia</a>
+                        <a href="dieta2.html">Aumentar masa muscular</a>
+                        <a href="dietas3.html">Bajar de Peso</a>
+                    </div>
+                </div>
+                <a href="guia.html">Guia&nbsp;Fitness</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </header>
+        <section>
+            <article id="contact">
+                <div id="texto">
+                   <div>
+                        <div class="contactologo">
+                            <h2>Contactenos</h2>
+                            <img src="imagenes/logo.png" alt="" class="logoC">
+                        </div>
+                        <div>
+                            <p id="texto1"> <br>Para solicitar más información por los servicios y productos que ofrecemos a nuestros clientes, llene el formulario y puede escribir lo que desea saber más sobre nuestro
+                                gimnasio.<br><br>
+                                También si desea ser parte de nuestros entrenadores personales, puede llenar el forlumario y
+                                solicitar información acerca de los requisitos para obtener el empleo, y se le informara si hay
+                                algun vacante.<br><br>
+                                O si lo prefiere puede llamar al 2413-1602.<br><br>
+                            </p>
+                            <h3 id="texto1">Dale Forma A Tu Vida. <br> ¡Somos tu mejor opción!</h3>
+                        </div>
+                   </div>
+                </div>
+                <div id="formulario">
+                    <form id="form1" name="form1" action="" method="post">
+                        <table id="tabla">
+                            <tr>
+                                <td> <label>Nombre:</label></td>
+                            </tr>
+                            <tr>
+                                <td><input class="botones" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" onblur="validarN()"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="nombre1" name="nombre1"> &nbsp; </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label>Correo Electrónico:</label></td>
+                            </tr>
+                            <tr>
+                                <td><input class="botones" type="email" name="email" id="email"  placeholder="Ingrese su correo" onblur="validarC()"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="correo1" name="correo1">&nbsp;</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label>Número de teléfono:</label></td>
+                            </tr>
+                            <tr>
+                                <td><input class="botones" type="number" name="telefono" id="telefono" placeholder="Ingrese su teléfono" onblur="validarNum()"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="numero" name="numero">&nbsp;</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label>Mensaje:</label></td>
+                            </tr>
+                            <tr>
+                                <td><textarea class="mensaje" name="mensaje" id="mensaje" rows="2" cols="30" placeholder="Escriba un mensaje" onblur="validarM()"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="mensaje1" class="mensaje1">&nbsp;</div>
+                                </td>
+                            </tr>
+                            <tr id="boton1">
+                                <td>
+                                    <input class="boton" type="reset" value="Borrar">&nbsp; &nbsp;
+                                    <input class="boton" type="button" value="Enviar" onclick="mostrar()" > 
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </article>
+        </section>
+        <footer>
+            <div class="footer2" id="contacto">
+
+                <h3>Contacto: </h3>
+                <p>2413-1602</p>
+            </div>
+            <div class="footer" id="encontrar">
+                <h3>Nos puedes encontrar en:</h3>
+                <p>2 av sur #5-2 Ahuachapán calle salida para Tacuba dos cuadras abajo del parque concordia 503
+                    Ahuachapán, El Salvador
+                </p>
+            </div>
+            <div class="footer" id="redes">
+                <h3>Nuestras Redes Sociales:</h3>
+                <div id="imgf">
+                    <a href="https://www.instagram.com" target="_blank" title="Instagram"><img src="imagenes/insta2.png"width="100px"></a>
+                    <a href="https://www.facebook.com" target="_blank" title="Facebook"><img src="imagenes/facebook2.png" width="100px" id="face"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
